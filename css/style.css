@@ -6,3 +6,11 @@
     transition: top 1s;
     color: black;
 }
+.navbar-brand {
+    margin-left: 1%;
+}
+@media only screen and (max-width: 375px) {
+    .navbar-brand {
+        display: none;
+    }
+  }
