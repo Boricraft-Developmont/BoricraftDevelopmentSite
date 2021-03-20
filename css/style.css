@@ -1,6 +1,6 @@
 /* A Boricraft Development production */
 /* Web development by Boricraft and Radical06 */
-/* Design by CookieRookie and Coffeedawg  */
+/* Design by CookieRookie and Coffeedawg */
 
 .navbar {
     transition: top 1s;
@@ -9,6 +9,15 @@
 .navbar-brand {
     margin-left: 1%;
 }
+.nav-link {
+    text-align: right;
+}
+
+
+
+
+
+
 @media only screen and (max-width: 375px) {
     .navbar-brand {
         display: none;
