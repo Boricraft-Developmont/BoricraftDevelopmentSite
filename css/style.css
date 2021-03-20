@@ -2,6 +2,9 @@
 /* Web development by Boricraft and Radical06 */
 /* Design by CookieRookie and Coffeedawg */
 
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
 .navbar {
     transition: top 1s;
     color: black;
@@ -12,13 +15,28 @@
 .nav-link {
     text-align: right;
 }
+#nav1 {
+    font-family: 'Cairo', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 41px;
+    color: #2E93ED;
+}
+#nav2 {
+    font-family: Cairo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 41px;
+    color: #12D1CC;
+
+}
 
 
 
 
-
-
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 386px) {
     .navbar-brand {
         display: none;
     }
