@@ -24,17 +24,8 @@
     color: #2E93ED;
 }
 #nav2 {
-    font-family: Cairo;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 41px;
-    color: #12D1CC;
-
+    color: white;
 }
-
-
-
 
 @media only screen and (max-width: 386px) {
     .navbar-brand {
