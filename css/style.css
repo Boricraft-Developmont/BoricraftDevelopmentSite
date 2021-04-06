@@ -7,7 +7,7 @@
 
 .navbar {
     transition: top 1s;
-    color: black;
+    color: #3691e2;
 }
 .navbar-brand {
     margin-left: 1%;
@@ -21,10 +21,10 @@
     font-weight: bold;
     font-size: 22px;
     line-height: 41px;
-    color: #2E93ED;
+    color: #3691e2;
 }
 #nav2 {
-    color: white;
+    color: #3691e2;
 }
 
 @media only screen and (max-width: 386px) {

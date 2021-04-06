@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 
 * {
-    background-color: black;
+    background-color: #212121;
 }
 .navbar {
     transition: top 1s;
