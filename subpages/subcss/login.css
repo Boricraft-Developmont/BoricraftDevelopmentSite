@@ -1,11 +1,32 @@
-body {
-    margin: 0;
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+* {
+    background-color: black;
 }
-.wrapper{
-    background: url('https://images.unsplash.com/photo-1589810264340-0ce27bfbf751?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80') no-repeat   center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.navbar {
+    transition: top 1s;
+    color: black;
 }
+.navbar-brand {
+    margin-left: 1%;
+}
+.nav-link {
+    text-align: right;
+}
+#nav1 {
+    font-family: 'Cairo', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 41px;
+    color: #2E93ED;
+}
+#nav2 {
+    color: white;
+}
+
+@media only screen and (max-width: 386px) {
+    .navbar-brand {
+        display: none;
+    }
+  }
