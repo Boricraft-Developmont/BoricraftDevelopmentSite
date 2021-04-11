@@ -5,6 +5,10 @@
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 
+body {
+    background-color: #262626;
+    scroll-behavior: smooth;
+}
 .navbar {
     transition: top 1s;
     color: #3691e2;
@@ -12,22 +16,24 @@
 .navbar-brand {
     margin-left: 1%;
 }
+
 .nav-link {
     text-align: right;
 }
-#nav1 {
+
+.nav-link {
+    text-align: right;
     font-family: 'Cairo', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
-    line-height: 41px;
-    color: #3691e2;
+    color: #fff;
 }
-#nav2 {
-    color: #3691e2;
+.navUno {
+    line-height: 41px;
 }
 
-@media only screen and (max-width: 386px) {
+@media only screen and (max-width: 394px) {
     .navbar-brand {
         display: none;
     }

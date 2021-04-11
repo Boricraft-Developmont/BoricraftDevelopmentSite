@@ -1,31 +1,38 @@
+/* A Boricraft Development production */
+/* Web development by Boricraft and Radical06 */
+/* Design by CookieRookie and Coffeedawg */
+
+/*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 
-* {
-    background-color: #212121;
+body {
+    background-color: #262626 !important;
+    scroll-behavior: smooth;
 }
+
 .navbar {
     transition: top 1s;
-    color: black;
+    color: #3691e2;
 }
 .navbar-brand {
     margin-left: 1%;
 }
 .nav-link {
     text-align: right;
-}
-#nav1 {
     font-family: 'Cairo', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
+    color: #3691e2;
+}
+.navUno {
     line-height: 41px;
-    color: #2E93ED;
 }
 #nav2 {
-    color: white;
+    color: #ffffff;
 }
 
-@media only screen and (max-width: 386px) {
+@media only screen and (max-width: 394px) {
     .navbar-brand {
         display: none;
     }
