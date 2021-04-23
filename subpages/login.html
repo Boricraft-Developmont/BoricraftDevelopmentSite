@@ -13,7 +13,7 @@
     <title>Boricraft Development StaffPanel Login</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4fc2e8" id="topnavbar">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #4fc2e8" id="topnavbar">
     <a href="#home"><img src="https://borisjeletich.nl/cdn/Logo.png" alt="Our logo" width="80" height="84"></a>
     <a class="navbar-brand mb-0 h1" href="#home">Boricraft Development Staff-Panel</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
@@ -57,23 +57,24 @@
       </ul>
     </div>
   </nav>
-  <div class="container-fluid">
-  <form>
-    <div class="form-group">
-      <label for="InputEmail">Email address</label>
-      <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-    <div class="form-group">
-      <label for="InputPassword">Password</label>
-      <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
-    </div>
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input" id=exampleCheck1">
-      <label class="form-check-label" for="Check1">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-</div>
+
+  <!--Inlog Form-->
+  <body class="text-center">
+    
+    <form class="form-signin">
+      <img class="mb-4" src="https://borisjeletich.nl/cdn/Logo.png" alt="logo" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p>
+    </form>
 </body>
 </html>
