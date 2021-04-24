@@ -1,0 +1,90 @@
+/* A Boricraft Development production */
+/* Web development by Boricraft and Radical06 */
+/* Design by CookieRookie and Coffeedawg */
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+body {
+    background-color: #262626;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    transition: top 1s;
+    color: #3691e2;
+}
+.navbar-brand {
+    margin-left: 1%;
+}
+.nav-link {
+    text-align: right;
+    font-family: 'Cairo', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #3691e2;
+}
+.navUno {
+    line-height: 41px;
+}
+#nav2 {
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 394px) {
+    .navbar-brand {
+        display: none;
+    }
+
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+}
+
+.text1{
+    position: absolute;
+    top: 130px;
+    left: 15px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+.downld1 {
+    background-color: DodgerBlue;
+    position: absolute;
+    top: 169px;
+    left: 15px;
+    color: white;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.text2{
+    position: absolute;
+    top: 249px;
+    left: 15px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+.downld2{
+    background-color: DodgerBlue;
+    position: absolute;
+    top: 309px;
+    left: 15px;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+}
