@@ -4,12 +4,12 @@ session_start();
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: welcome.php");
+    header("location: dashboard.php");
     exit;
 }
  
 // Include config file
-require_once "subphp/config.php";
+require_once "../../phpconfig/config.php";
  
 // Define variables and initialize with empty values
 $username = $password = "";

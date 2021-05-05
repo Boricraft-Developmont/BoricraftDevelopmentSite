@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 
 <!doctype html>
 <html lang="en">
@@ -11,8 +15,6 @@
     
 
     <!-- Bootstrap core CSS -->
-
-    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="https://borisjeletich.nl/cdn/bamihaplogo.ico" type="image/gif" sizes="64x64">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -106,7 +108,7 @@
             <a class="nav-link" href="#">
                 <i class="bi bi-box-seam"></i>
               <span data-feather="users"></span>
-              Mod-packs
+              Modpacks
             </a>
           </li>
           <!-- <li class="nav-item">
@@ -173,7 +175,7 @@
         <h1 class="h2">Dashboard</h1>
 
       </div>
-      <p class="h5">Welcome, {Username}</p> <!-- TODO: Boricraft connect Username Variable to username of login-->
+      <p class="h5">Welcome, <?php $_SESSION["username"] ?></p> <!-- TODO: Boricraft connect Username Variable to username of login-->
       <img src="https://borisjeletich.nl/cdn/Logo.png" alt="Boricraft Development Logo" style="width: 100px;">
       <br>
       <br>

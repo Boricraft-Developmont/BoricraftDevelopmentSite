@@ -8,6 +8,7 @@
 body {
     background-color: #262626;
     scroll-behavior: smooth;
+    color: white;
 }
 .navbar {
     transition: top 1s;
@@ -31,7 +32,6 @@ body {
     color: #fff;
 }
 .navUno {
-    line-height: 41px;
 }
 
 @media only screen and (max-width: 394px) {
