@@ -9,7 +9,6 @@ body {
     background-color: #262626;
     scroll-behavior: smooth;
 }
-
 .navbar {
     transition: top 1s;
     color: #3691e2;
@@ -17,36 +16,38 @@ body {
 .navbar-brand {
     margin-left: 1%;
 }
-.nav-link {
+
+.navOne {
     text-align: right;
     font-family: 'Cairo', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
-    color: #3691e2;
-}
-.navUno {
-    line-height: 41px;
-}
-#nav2 {
-    color: #ffffff;
+    color: #fff;
 }
 
-.downloadings button {
-    align: left;
+.h2,.h5,p {
+    color: white;
+}
+
+.sidebarMenu {
+    background-color: #262626;
+}
+a {
+    color: white;
+}
+
+.iconMenu i{
+    color: white;
+    font-size: 50px;
+    padding-left: 70px;
+}
+.iconMenu {
+    text-align: center;
 }
 
 @media only screen and (max-width: 394px) {
     .navbar-brand {
         display: none;
     }
-
   }
-
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-}
-
-
