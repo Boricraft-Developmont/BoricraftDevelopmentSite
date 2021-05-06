@@ -20,6 +20,11 @@ body {
 
 .nav-link {
     text-align: right;
+    display: inline-block;
+    padding-top: .9rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
 }
 
 
@@ -31,8 +36,13 @@ body {
     font-size: 22px;
     color: #fff;
 }
-.navUno {
+
+.about {
+    margin-left: 5rem;
+    margin-top: 10rem;
 }
+
+
 
 @media only screen and (max-width: 394px) {
     .navbar-brand {

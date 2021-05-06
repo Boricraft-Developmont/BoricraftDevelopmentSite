@@ -1,5 +1,10 @@
 <?php
   session_start();
+  if(!(isset($_SESSION['username'])))
+  	{
+      header("Location: ../index.html");
+    }
+
 ?>
 
 
@@ -132,7 +137,7 @@
           <ul class="nav flex-column mb-2">
             <li class="nav-item">
               <a class="nav-link" href="#">
-<i class="bi bi-cloud-arrow-down-fill"></i>
+                  <i class="bi bi-cloud-arrow-down-fill"></i>
                 <span data-feather="file-text"></span>
                 Downloads
               </a>
@@ -175,7 +180,7 @@
         <h1 class="h2">Dashboard</h1>
 
       </div>
-      <p class="h5">Welcome, <?php $_SESSION["username"] ?></p> <!-- TODO: Boricraft connect Username Variable to username of login-->
+      <?php echo  '<p class="h5">Welcome, ' . $_SESSION["username"] . '</p>'  ?><!-- TODO: Boricraft connect Username Variable to username of login-->
       <img src="https://borisjeletich.nl/cdn/Logo.png" alt="Boricraft Development Logo" style="width: 100px;">
       <br>
       <br>
