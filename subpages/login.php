@@ -228,7 +228,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
               style="width: 39px; margin-top: 2px;"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login.html" id="nav2"><i class="bi bi-person-fill"
+          <a class="nav-link" href="login.php" id="nav2"><i class="bi bi-person-fill"
               style="font-size: 2rem; color: white;"></i></a>
         </li>
       </ul>

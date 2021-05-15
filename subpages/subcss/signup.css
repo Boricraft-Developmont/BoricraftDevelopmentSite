@@ -17,6 +17,7 @@ body {
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    color: #ffffff;
 }
 
 .navbar {
@@ -47,11 +48,17 @@ body {
     }
   }
 
+.wrapper {
+  margin: 0 auto;
+  align-content: center;
+}
+
 .form-signin {
   width: 100%;
   max-width: 430px;
   padding: 15px;
   margin: auto;
+  align-content: center;
   color: #f8f9fa;
 }
 .form-signin .checkbox {
