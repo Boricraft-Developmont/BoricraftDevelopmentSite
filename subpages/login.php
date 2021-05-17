@@ -248,12 +248,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <img class="mb-4" src="https://borisjeletich.nl/cdn/Logo.png" alt="logo" width="72" height="72">
     <h1 class="h3 mb-3 font-weight-normal">Login here!</h1>
     <div>
-        <label for="inputUsername" class="sr-only">Email</label>
-        <input type="text" name="username" placeholder="Email" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
-        <span class="invalid-feedback"><?php echo $username_err; ?></span>
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-    <div>
         <label for="inputUsername" class="sr-only">Username</label>
         <input type="text" name="username" placeholder="Username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
         <span class="invalid-feedback"><?php echo $username_err; ?></span>
