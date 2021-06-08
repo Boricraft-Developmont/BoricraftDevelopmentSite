@@ -44,8 +44,6 @@ body {
     color: white;
 }
 
-
-
 .landingpage .h1 {
     color: white;
     margin-top: 20vh;
@@ -64,11 +62,24 @@ body {
     transform: scaleX(-1);
 }
 
+.btn {
+    margin-top: 27rem;
+    position: absolute;
+}
+
 .landingpage button {
     float: left;
-    margin-left: 4em;
-    margin-top: 5rem;
+    margin-left: 5vw;
+    width: 10%;
+    height: 5%;
+    border-radius: 16px;
+    background-color: #1597bb;
+    color: white;
+    font-weight: 550;
+    font-family: 'Cairo', sans-serif;
+    letter-spacing: 2px;
 }
+
 
 @media only screen and (max-width: 394px) {
     .navbar-brand {

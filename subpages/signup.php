@@ -3,6 +3,10 @@
 require_once "../../phpconfig/config.php";
 require_once "session.php";
 
+$error = '';
+$succes = '';
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
 
     $fullname = trim($_POST['name']);
@@ -16,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
 
     $query->bind_param('s', $email);
     $query->execute();
-    $query->store_results();
+    $query->store_result();
         if ($query->num_rows > 0) {
             $error .= '<p class="error">The email is already in use!</p>';
         } else {
@@ -41,23 +45,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                 $result = $insertQuery->execute();
                 if ($result) {
                     $error .= '<p class="succes">Your registration was successful!</p>';
+                    $query->close();
+                    $insertQuery->close();
+                    mysqli_close($db);  
                 } else {
                     $error .= '<p class="error">Something went wrong!</p>';
                 }
             }
         }
     }
-
-    $query->close();
-    $insertQuery->close();
-    mysqli_close($db);
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Sign up</title>
+        <title>Boricraft Development | Signup</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     </head>
     <body>
