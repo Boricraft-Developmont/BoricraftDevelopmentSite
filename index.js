@@ -8,3 +8,9 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+// <script src='../../dist/core.js'></script>
+// new Typewriter('#typewriter', {
+//   strings: ['Plug-in\'s', 'Websites', 'Programs'],
+//   autoStart: true,
+// });

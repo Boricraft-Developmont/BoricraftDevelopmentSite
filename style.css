@@ -6,13 +6,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 
 body {
-    background-color: #262626;
+    background-color: #4fc2e8;
     scroll-behavior: smooth;
-    color: white;
+    
 }
 .navbar {
     transition: top 1s;
-    color: #3691e2;
+
 }
 .navbar-brand {
     margin-left: 1%;
@@ -21,20 +21,53 @@ body {
 .nav-link {
     text-align: right;
     display: inline-block;
-    padding-top: .9rem;
     font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: .3125rem;
     line-height: inherit;
     white-space: nowrap;
 }
 
+.linkjes{
+    margin-right: 1.3rem;
+}
+.helpmenu {
+    margin-right: 2rem;
+}
+.helpmenu i {
+    margin-right: 0.2em;
+}
 
-.nav-link {
-    text-align: right;
+
+#help {
+    font-size: 2rem;
+    color: white;
+}
+
+
+
+.landingpage .h1 {
+    color: white;
+    margin-top: 20vh;
+    margin-left: 5vw;
+    width: 40%;
+    font-size: 5rem;
+    float: left;
     font-family: 'Cairo', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
-    color: #fff;
+    font-weight: 700;
+}
+.landingpage #b80448b0-14d5-4ee1-8d6b-75eb9311be00 {
+    float: right;
+    margin-top: 7vh;
+    height: 69vh;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.landingpage button {
+    float: left;
+    margin-left: 4em;
+    margin-top: 5rem;
 }
 
 @media only screen and (max-width: 394px) {
