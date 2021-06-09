@@ -4,7 +4,7 @@
   
 # Boricraft Development Site
 
-A brief description of what this project does and who it's for
+The official website of the Boricraft Development Site
 
 
 ## Authors
