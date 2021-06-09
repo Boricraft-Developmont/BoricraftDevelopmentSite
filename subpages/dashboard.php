@@ -1,13 +1,9 @@
+
 <?php
-  session_start();
-  if(!(isset($_SESSION['username'])))
-  	{
-      header("Location: ../index.html");
-    }
+//include auth_session.php file on all user panel pages
+include("auth_session.php");
 
 ?>
-
-
 <!doctype html>
 <html lang="en">
   <head>

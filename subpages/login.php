@@ -1,83 +1,46 @@
-<?php
-require_once "../../phpconfig/config.php";
-require_once "session.php";
-
-
-$error = '';
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
-
-    $email = trim($_POST['email']);
-    $password = trim($_POST['password']);
-
-    // validate if email is empty
-    if (empty($email)) {
-        $error .= '<p class="error">Please enter email.</p>';
-    }
-
-    // validate if password is empty
-    if (empty($password)) {
-        $error .= '<p class="error">Please enter your password.</p>';
-    }
-
-    if (empty($error)) {
-        if($query = $db->prepare("SELECT * FROM users WHERE email = ?")) {
-            $query->bind_param('s', $email);
-            $query->execute();
-            $row = $query->fetch();
-            if ($row) {
-                if (password_verify($password, $row['password'])) {
-                    $_SESSION["userid"] = $row['id'];
-                    $_SESSION["user"] = $row;
-
-                    // Redirect the user to welcome page
-                    header("location: welcome.php");
-                    exit;
-                } else {
-                    $error .= '<p class="error">The password is not valid.</p>';
-                }
-            } else {
-                $error .= '<p class="error">No User exist with that email address.</p>';
-            }
-        }
-        $query->close();
-    }
-    // Close connection
-    mysqli_close($db);
-}
-?>
-
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Boricraft Development | Login</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Login</h2>
-                    <p>Please fill in your email and password</p>
-                    <?php echo $row['password']; ?>
-                    <?php echo $email; ?>
-                    <?php echo $error; ?>
-                    <form action="" method="POST">
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" name="email" class="form-control" required />
-                        </div>
-                        <div>  
-                            <label>Password</label>
-                            <input type="password" name="password" class="form-control" required />
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" name="submit" class="btn btn-primary" value="Submit">
-                        </div>
-                        <p>Don't have an account? <a href="signup.php">Signup here</a>.</p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </body>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Login</title>
+    <link rel="stylesheet" href="subcss/accstyle.css"/>
+</head>
+<body>
+<?php
+    require('../../phpconfig/config.php');
+    session_start();
+    // When form submitted, check and create user session.
+    if (isset($_POST['username'])) {
+        $username = stripslashes($_REQUEST['username']);    // removes backslashes
+        $username = mysqli_real_escape_string($con, $username);
+        $password = stripslashes($_REQUEST['password']);
+        $password = mysqli_real_escape_string($con, $password);
+        // Check user is exist in the database
+        $query    = "SELECT * FROM `users` WHERE username='$username'
+                     AND password='" . md5($password) . "'";
+        $result = mysqli_query($con, $query) or die(mysql_error());
+        $rows = mysqli_num_rows($result);
+        if ($rows == 1) {
+            $_SESSION['username'] = $username;
+            // Redirect to user dashboard page
+            header("Location: dashboard.php");
+        } else {
+            echo "<div class='form'>
+                  <h3>Incorrect Username/password.</h3><br/>
+                  <p class='link'>Click here to <a href='login.php'>Login</a> again.</p>
+                  </div>";
+        }
+    } else {
+?>
+    <form class="form" method="post" name="login">
+        <h1 class="login-title">Login</h1>
+        <input type="text" class="login-input" name="username" placeholder="Username" autofocus="true"/>
+        <input type="password" class="login-input" name="password" placeholder="Password"/>
+        <input type="submit" value="Login" name="submit" class="login-button"/>
+        <p class="link"><a href="signup.php">New Registration</a></p>
+  </form>
+<?php
+    }
+?>
+</body>
 </html>
