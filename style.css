@@ -86,3 +86,52 @@ body {
         display: none;
     }
   }
+
+  @media only screen and (max-width: 1232px) {
+      .landingpage button {
+          font-size: 0.9rem;
+      }
+      .landingpage #b80448b0-14d5-4ee1-8d6b-75eb9311be00 {
+        display: none;
+
+    }
+  }
+
+  @media only screen and (max-width: 1650px) {
+    .landingpage .h1 {
+        color: white;
+        margin-top: 20vh;
+        margin-left: 5vw;
+        width: 30%;
+        font-size: 4rem;
+    }
+    .landingpage button {
+        margin-top: 22rem;
+    }
+  }
+
+  @media only screen and (max-width: 1546px) {
+    .landingpage .h1 {
+        color: white;
+        margin-top: 20vh;
+        margin-left: 5vw;
+        width: 30%;
+        font-size: 4rem;
+    }
+    .landingpage button {
+        margin-top: 22rem;
+    }
+  }
+
+  @media only screen and (max-width: 1486px) {
+    .landingpage .h1 {
+        color: white;
+        margin-top: 25vh;
+        margin-left: 5vw;
+        width: 33%;
+        font-size: 3.7rem;
+    }
+    .landingpage button {
+        margin-top: 24rem;
+    }
+  }
