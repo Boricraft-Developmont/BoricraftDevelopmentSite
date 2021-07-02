@@ -10,7 +10,7 @@ include("auth_session.php");
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>Boricraft Development Dashboard</title>
+    <title>Products | Boricraft Development Dashboard</title>
 
 
     
@@ -91,7 +91,7 @@ include("auth_session.php");
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="products.php">
+            <a class="nav-link" href="#">
                 <i class="bi bi-shop"></i>
               <span data-feather="file"></span>
               Products
@@ -101,6 +101,7 @@ include("auth_session.php");
             <a class="nav-link" href="#">
                 <i class="bi bi-ui-radios"></i>
               <span data-feather="shopping-cart"></span>
+              
               Plugins
             </a>
           </li>
@@ -170,33 +171,50 @@ include("auth_session.php");
       </div>
     </nav>
 
-    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Dashboard</h1>
-
+    <div class="row row-cols-1 row-cols-md-3">
+  <div class="col mb-4">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">VIP rank</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
-      <?php echo  '<p class="h5">Welcome, ' . $_SESSION["username"] . '</p>'  ?><!-- TODO: Boricraft connect Username Variable to username of login-->
-      <img src="https://borisjeletich.nl/cdn/Logo.png" alt="Boricraft Development Logo" style="width: 100px;">
-      <br>
-      <br>
-      <p>With the <b>Boricraft Development Dashboard </b>you can </p>
-      <p>Cursus risus at ultrices mi tempus imperdiet nulla. Ut eu sem integer vitae justo eget. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Mauris in aliquam sem fringilla. Sed turpis tincidunt id aliquet risus feugiat in ante metus. Tellus in metus vulputate eu scelerisque. Amet cursus sit amet dictum sit. Tortor posuere ac ut consequat semper viverra nam libero. Blandit turpis cursus in hac. Euismod in pellentesque massa placerat duis. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Tristique senectus et netus et. Scelerisque purus semper eget duis at tellus at. Ante in nibh mauris cursus mattis. Elementum integer enim neque volutpat ac. Sed sed risus pretium quam vulputate. Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Maecenas sed enim ut sem viverra aliquet eget sit. Elit pellentesque habitant morbi tristique senectus et netus.</p>
-      <p>Tincidunt id aliquet risus feugiat in ante metus dictum!</p>
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"></div>
-      <div class="iconMenu">
-         <a href="https://www.google.com" target="_blank"> <i class="bi bi-house-fill"></i></a>
-         <a href="https://www.google.com" target="_blank"><i class="bi bi-shop"></i></a>
-         <a href="https://www.google.com" target="_blank"><i class="bi bi-ui-radios"></i></a>
-         <a href="https://www.google.com" target="_blank"><i class="bi bi-box-seam"></i></a>
     </div>
-    
-    </main>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">VIP+ rank</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MVP</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MVP+</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MVP++</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
   </div>
 </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.6/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-        <script src="dashboard.js"></script>
-  </body>
-</html>
