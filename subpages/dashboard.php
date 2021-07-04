@@ -175,7 +175,7 @@ include("auth_session.php");
         <h1 class="h2">Dashboard</h1>
 
       </div>
-      <?php echo  '<p class="h5">Welcome, ' . $_SESSION["username"] . '</p>'  ?><!-- TODO: Boricraft connect Username Variable to username of login-->
+      <?php echo  '<p class="h5">Welcome, ' . $_SESSION["username"] . '</p>'  ?>
       <img src="https://borisjeletich.nl/cdn/Logo.png" alt="Boricraft Development Logo" style="width: 100px;">
       <br>
       <br>
@@ -184,7 +184,7 @@ include("auth_session.php");
       <p>Tincidunt id aliquet risus feugiat in ante metus dictum!</p>
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"></div>
       <div class="iconMenu">
-         <a href="https://www.google.com" target="_blank"> <i class="bi bi-house-fill"></i></a>
+         <a href="https://www.google.com" target="_blank"><i class="bi bi-house-fill"></i></a>
          <a href="https://www.google.com" target="_blank"><i class="bi bi-shop"></i></a>
          <a href="https://www.google.com" target="_blank"><i class="bi bi-ui-radios"></i></a>
          <a href="https://www.google.com" target="_blank"><i class="bi bi-box-seam"></i></a>

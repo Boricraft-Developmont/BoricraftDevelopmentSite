@@ -31,7 +31,7 @@ body {
 }
 
 .sidebarMenu {
-    background-color: #262626;
+    background-color: #272627;
 }
 a {
     color: white;
@@ -44,6 +44,16 @@ a {
 }
 .iconMenu {
     text-align: center;
+}
+
+.card {
+    max-width: 200px;
+}
+
+.card-thumbnail {
+    max-height: 250px;
+    overflow: hidden;
+    object-fit: contain;
 }
 
 @media only screen and (max-width: 394px) {

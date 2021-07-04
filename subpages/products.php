@@ -170,51 +170,71 @@ include("auth_session.php");
         </ul>
       </div>
     </nav>
+    
 
-    <div class="row row-cols-1 row-cols-md-3">
-  <div class="col mb-4">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">VIP rank</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="card my-3">
+            <div class="card-thumbnail">
+                <img src="https://media.discordapp.net/attachments/532217354168303648/821338193093459988/Logo.png" class="img-fluid" alt="thumbnail">
+            </div>
+            <div class="card-body">
+                <h3 class="card-title"><a href="#" class="text-secondary">VIP rank</a></h3>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">VIP+ rank</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
+
+    <div class="col-md-6 col-lg-4">
+        <div class="card my-3">
+            <div class="card-thumbnail">
+                <img src="https://media.discordapp.net/attachments/532217354168303648/821338193093459988/Logo.png" class="img-fluid" alt="thumbnail">
+            </div>
+            <div class="card-body">
+                <h3 class="card-title"><a href="#" class="text-secondary">VIP+ rank</a></h3>
+                <p class="card-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+                <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">MVP</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-      </div>
+
+    <div class="col-md-6 col-lg-4">
+        <div class="card my-3">
+            <div class="card-thumbnail">
+                <img src="https://media.discordapp.net/attachments/532217354168303648/821338193093459988/Logo.png" class="img-fluid" alt="thumbnail">
+            </div>
+            <div class="card-body">
+                <h3 class="card-title"><a href="#" class="text-secondary">MVP</a></h3>
+                <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it</p>
+                <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">MVP+</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
+
+    <div class="col-md-6 col-lg-4">
+        <div class="card my-3">
+            <div class="card-thumbnail">
+                <img src="https://media.discordapp.net/attachments/532217354168303648/821338193093459988/Logo.png" class="img-fluid" alt="thumbnail">
+            </div>
+            <div class="card-body">
+                <h3 class="card-title"><a href="#" class="text-secondary">MVP+</a></h3>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">MVP++</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
+
+    <div class="col-md-6 col-lg-4">
+        <div class="card my-3">
+            <div class="card-thumbnail">
+                <img src="https://media.discordapp.net/attachments/532217354168303648/821338193093459988/Logo.png" class="img-fluid" alt="thumbnail">
+            </div>
+            <div class="card-body">
+                <h3 class="card-title"><a href="#" class="text-secondary">MVP++</a></h3>
+                <p class="card-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+                <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
 </div>
