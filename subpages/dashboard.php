@@ -1,8 +1,10 @@
+<?php 
+  session_start(); 
 
-<?php
-//include auth_session.php file on all user panel pages
-include("auth_session.php");
-
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: ../registration/login.php');
+  }
 ?>
 <!doctype html>
 <html lang="en">
