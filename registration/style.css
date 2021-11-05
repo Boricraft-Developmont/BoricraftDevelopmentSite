@@ -1,3 +1,13 @@
+#particles-js {
+  background: #120c31;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: relative;
+  margin: 0px;
+}
+
 
 * {
     margin: 0px;
@@ -5,12 +15,21 @@
   }
   body {
     font-size: 120%;
-    background: #F8F8FF;
   }
   
+  #regform {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+
   .header {
     width: 30%;
-    margin: 50px auto 0px;
+    margin: 0px auto 0px;
     color: white;
     background: #5F9EA0;
     text-align: center;
