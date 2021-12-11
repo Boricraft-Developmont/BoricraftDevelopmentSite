@@ -1,10 +1,7 @@
-<?php 
-  session_start(); 
+<?php
+//include auth_session.php file on all user panel pages
+include("auth_session.php");
 
-  if (!isset($_SESSION['username'])) {
-  	$_SESSION['msg'] = "You must log in first";
-  	header('location: ../registration/login.php');
-  }
 ?>
 <!doctype html>
 <html lang="en">
@@ -162,7 +159,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="logout.php">
+            <a class="nav-link" href="../registration/logout.php">
                 <i class="bi bi-box-arrow-right"></i>
               <span data-feather="file-text"></span>
               Logout
