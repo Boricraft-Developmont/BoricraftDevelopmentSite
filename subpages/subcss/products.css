@@ -1,119 +1,183 @@
-.wrapper {
-    height: 500px;
-    width: 628px;
-    margin: 50px 5% auto;
-    /* margin-left: 10%; */
-    border-radius: 7px 7px 7px 7px;
-    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0);
+/* A Boricraft Development production */
+/* Web development by Boricraft and Radical06 */
+/* Design by CookieRookie and Coffeedawg */
 
-    position: relative;
-    display: flex;
-  }
-  
-  .product-img {
-    float: left;
-    height: 500px;
-    width: 256px;
-  }
-  
-  .product-img img {
-    border-radius: 7px 0 0 7px;
-  }
-  
-  .product-info {
-    float: left;
-    height: 500px;
-    width: 327px;
-    border-radius: 0 7px 10px 0;
-    background-color: #181A1B;
-  }
-  
-  .product-text {
-    height: 397px;
-    width: 327px;
-  }
-  
-  .product-text h1 {
-    margin: 0 0 0 38px;
-    padding-top: 52px;
-    font-size: 34px;
-    color: #474747;
-  }
-  
-  .product-text h1,
-  .product-price-btn p {
-    font-family: 'Bentham', serif;
-  }
-  
-  .product-text h2 {
-    margin: 0 0 47px 38px;
-    font-size: 13px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #d2d2d2;
-    letter-spacing: 0.2em;
-  }
-  
-  .product-text p {
-    height: 125px;
-    margin: 0 0 0 38px;
-    font-family: 'Playfair Display', serif;
-    color: #8d8d8d;
-    line-height: 1.7em;
-    font-size: 15px;
-    font-weight: lighter;
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+body {
+    background-color: #262626;
+    scroll-behavior: smooth;
+}
+.navbar {
+    transition: top 1s;
+    color: #3691e2;
+}
+.navbar-brand {
+    margin-left: 1%;
+}
+
+.navOne {
+    text-align: right;
+    font-family: 'Cairo', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+}
+
+.h2,.h5,p {
+    color: white;
+}
+
+.sidebarMenu {
+    background-color: #272627;
+}
+a {
+    color: white;
+}
+
+.iconMenu i{
+    color: white;
+    font-size: 50px;
+    padding-left: 70px;
+}
+.iconMenu {
+    text-align: center;
+}
+
+.card {
+    max-width: 200px;
+}
+
+.card-thumbnail {
+    max-height: 250px;
     overflow: hidden;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 394px) {
+    .navbar-brand {
+        display: none;
+    }
   }
-  
-  .product-price-btn {
-    height: 103px;
-    width: 327px;
-    margin-top: 17px;
-    position: relative;
-  }
-  
-  .product-price-btn p {
-    display: inline-block;
-    position: absolute;
-    top: -13px;
-    height: 50px;
-    font-family: 'Trocchi', serif;
-    margin: 0 0 0 38px;
-    font-size: 28px;
-    font-weight: lighter;
-    color: #474747;
-  }
-  
-  .product-span {
-    display: inline-block;
-    height: 50px;
-    font-family: 'Suranna', serif;
-    font-size: 34px;
-  }
-  
-  .product-price-btn button {
-    float: right;
-    display: inline-block;
-    height: 50px;
-    width: 176px;
-    margin: 0 40px 0 16px;
-    box-sizing: border-box;
-    border: transparent;
-    border-radius: 60px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: #ffffff;
-    background-color: #9cebd5;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  .product-price-btn button:hover {
-    background-color: #79b0a1;
-  }
+
+
+/* Product card css */
+.wrapper {
+  height: 512px;
+  width: 583px;
+  margin: 50px auto;
+  border-radius: 7px 7px 7px 7px;
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  float: left;
+  height: 512px;
+  width: 256px;
+}
+
+.product-img img {
+  border-radius: 7px 0 0 7px;
+}
+
+.product-info {
+  float: left;
+  position: relative;
+  height: 512px;
+  width: 327px;
+  border-radius: 0 7px 10px 0;
+  background-color: #ffffff;
+}
+
+.product-text {
+  height: 300px;
+  width: 327px;
+}
+
+.product-text h1 {
+  margin: 0 0 0 38px;
+  padding-top: 52px;
+  font-size: 34px;
+  color: #474747;
+}
+
+.product-text h1,
+.product-price-btn p {
+  font-family: 'Bentham', serif;
+}
+
+.product-text h2 {
+  margin: 0 0 47px 38px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d2d2d2;
+  letter-spacing: 0.2em;
+}
+
+.product-text p {
+  height: 125px;
+  margin: 0 0 0 38px;
+  font-family: 'Playfair Display', serif;
+  color: #8d8d8d;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+.product-price-btn {
+  height: 103px;
+  width: 327px;
+  margin-top: 17px;
+  position: absolute;
+  bottom: 5px;
+}
+
+.product-price-btn p {
+  display: inline-block;
+  position: absolute;
+  top: -13px;
+  height: 50px;
+  font-family: 'Trocchi', serif;
+  margin: 0 0 0 38px;
+  font-size: 28px;
+  font-weight: lighter;
+  color: #474747;
+}
+
+.prodspan {
+  display: inline-block;
+  height: 50px;
+  font-family: 'Suranna', serif;
+  font-size: 34px;
+}
+
+.product-price-btn button {
+  float: right;
+  display: inline-block;
+  height: 50px;
+  width: 176px;
+  margin: 0 40px 0 16px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #9cebd5;
+  cursor: pointer;
+  outline: none;
+}
+
+.product-price-btn button:hover {
+  background-color: #79b0a1;
+}

@@ -1,4 +1,3 @@
-
 <?php
 //include auth_session.php file on all user panel pages
 include("auth_session.php");
@@ -10,7 +9,7 @@ include("auth_session.php");
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>Products | Boricraft Development Dashboard</title>
+    <title>Boricraft Development Products</title>
 
 
     
@@ -31,9 +30,8 @@ include("auth_session.php");
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../subpages/subcss/dashboard.css" type="text/css">
+    <link rel="stylesheet" href="../subpages/subcss/products.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="subcss/products.css">
     <script src="index.js"></script>
   </head>
   
@@ -80,171 +78,159 @@ include("auth_session.php");
   <body>
 
 
-    <div class="container-fluid">
-      <div class="row">
-        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
-          <div class="sidebar-sticky pt-3">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <span data-feather="home"></span>
-                  <i class="bi bi-house-fill"></i> Dashboard <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="bi bi-shop"></i>
-                  <span data-feather="file"></span>
-                  Products
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="bi bi-ui-radios"></i>
-                  <span data-feather="shopping-cart"></span>
-                  
-                  Plugins
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="bi bi-box-seam"></i>
-                  <span data-feather="users"></span>
-                  Modpacks
-                </a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="bar-chart-2"></span>
-                  Reports
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="layers"></span>
-                  Integrations
-                </a>
-              </li> -->
-            </ul>
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                <span>Saved</span>
-                  <span data-feather="plus-circle"></span>
-                </a>
-              </h6>
-              <ul class="nav flex-column mb-2">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                  <i class="bi bi-receipt-cutoff"></i>
-                    <span data-feather="file-text"></span>
-                    Purchased
-                  </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="bi bi-bookmarks-fill"></i>
-                      <span data-feather="file-text"></span>
-                      Bookmarks
-                    </a>
-                  </li>
-                </ul>
-
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-              <span>Account</span>
-                <span data-feather="plus-circle"></span>
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+      <div class="sidebar-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span data-feather="home"></span>
+              <i class="bi bi-house-fill"></i> Dashboard <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.php">
+                <i class="bi bi-shop"></i>
+              <span data-feather="file"></span>
+              Products
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <i class="bi bi-ui-radios"></i>
+              <span data-feather="shopping-cart"></span>
+              Plugins
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <i class="bi bi-box-seam"></i>
+              <span data-feather="users"></span>
+              Modpacks
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="bar-chart-2"></span>
+              Reports
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="layers"></span>
+              Integrations
+            </a>
+          </li> -->
+        </ul>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Saved</span>
+              <span data-feather="plus-circle"></span>
+            </a>
+          </h6>
+          <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              <i class="bi bi-receipt-cutoff"></i>
+                <span data-feather="file-text"></span>
+                Purchased
               </a>
-            </h6>
-            <ul class="nav flex-column mb-2">
-              <li class="nav-item">
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <i class="bi bi-gear-fill"></i>
+                    <i class="bi bi-bookmarks-fill"></i>
                   <span data-feather="file-text"></span>
-                  Settings
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="logout.php">
-                    <i class="bi bi-box-arrow-right"></i>
-                  <span data-feather="file-text"></span>
-                  Logout
+                  Bookmarks
                 </a>
               </li>
             </ul>
-          </div>
-        </nav>
-        
-        
-        
-      </div>
 
-      
-    
-
-      <div class="row row-cols-2 g-4">
-        <div class="wrapper col">
-          <div class="product-img">
-            <img src="https://borisjeletich.nl/cdn/BorOS/Chroma-half.png" height="500" width="256">
-          </div>
-          <div class="product-info">
-          <div class="product-text">
-            <h1>Harvest Vase</h1>
-            <h2>by studio and friends</h2>
-              <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
-            </div>
-            <div class="product-price-btn">
-            <p><span class="product-span">78</span>$</p>
-              <button type="button">buy now</button>
-          </div>
-        </div>
-        </div>
-        <div class="wrapper col">
-          <div class="product-img">
-            <img src="https://borisjeletich.nl/cdn/BorOS/Chroma-half.png" height="500" width="256">
-          </div>
-          <div class="product-info">
-          <div class="product-text">
-            <h1>Harvest Vase</h1>
-            <h2>by studio and friends</h2>
-              <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
-            </div>
-            <div class="product-price-btn">
-            <p><span class="product-span">78</span>$</p>
-              <button type="button">buy now</button>
-          </div>
-        </div>
-        </div>
-        <div class="wrapper col">
-          <div class="product-img">
-            <img src="https://borisjeletich.nl/cdn/BorOS/Chroma-half.png" height="500" width="256">
-          </div>
-          <div class="product-info">
-          <div class="product-text">
-            <h1>Harvest Vase</h1>
-            <h2>by studio and friends</h2>
-              <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
-            </div>
-            <div class="product-price-btn">
-            <p><span class="product-span">78</span>$</p>
-              <button type="button">buy now</button>
-          </div>
-        </div>
-        </div>
-        <div class="wrapper col">
-          <div class="product-img">
-            <img src="https://borisjeletich.nl/cdn/BorOS/Chroma-half.png" height="500" width="256">
-          </div>
-          <div class="product-info">
-          <div class="product-text">
-            <h1>Harvest Vase</h1>
-            <h2>by studio and friends</h2>
-              <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
-            </div>
-            <div class="product-price-btn">
-            <p><span class="product-span">78</span>$</p>
-              <button type="button">buy now</button>
-          </div>
-        </div>
-        </div>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Account</span>
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <i class="bi bi-gear-fill"></i>
+              <span data-feather="file-text"></span>
+              Settings
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../registration/logout.php">
+                <i class="bi bi-box-arrow-right"></i>
+              <span data-feather="file-text"></span>
+              Logout
+            </a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      <div class="card-deck">
+        <div class="wrapper">
+          <div class="product-img">
+            <img src="https://borisjeletich.nl/cdn/BorOS/Chroma-half.png" height="512" width="256">
+          </div>
+          <div class="product-info">
+            <div class="product-text">
+              <h1>Chroma</h1>
+              <h2>By Boricraft-Development</h2>
+              <p>Chroma is pog browser<br> Lorem ipsum dolor sit amet<br> consectetur adipiscing elit.<br> Donec placerat porta mauris<br> sit amet venenatis. </p>
+            </div>
+            <div class="product-price-btn">
+              <p><span class="prodspan">78</span>$</p>
+              <button type="button">buy now</button>
+            </div>
+          </div>
+        </div> 
+
+        <div class="wrapper">
+          <div class="product-img">
+            <img src="https://borisjeletich.nl/cdn/BorOS/Chroma-half.png" height="512" width="256">
+          </div>
+          <div class="product-info">
+            <div class="product-text">
+              <h1>Chroma</h1>
+              <h2>By Boricraft-Development</h2>
+              <p>Chroma is pog browser<br> Lorem ipsum dolor sit amet<br> consectetur adipiscing elit.<br> Donec placerat porta mauris<br> sit amet venenatis. </p>
+            </div>
+            <div class="product-price-btn">
+              <p><span class="prodspan">78</span>$</p>
+              <button type="button">buy now</button>
+            </div>
+          </div>
+        </div> 
+
+
+      </div>
+    </main>
   </body>
 </html>
+
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.6/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="dashboard.js"></script> -->
+<!-- <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+
+      </div>
+      <?php echo  '<p class="h5">Welcome, ' . $_SESSION["username"] . '</p>'  ?>
+      <img src="https://borisjeletich.nl/cdn/Logo.png" alt="Boricraft Development Logo" style="width: 100px;">
+      <br>
+      <br>
+      <p>With the <b>Boricraft Development Dashboard </b>you can </p>
+      <p>Cursus risus at ultrices mi tempus imperdiet nulla. Ut eu sem integer vitae justo eget. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Mauris in aliquam sem fringilla. Sed turpis tincidunt id aliquet risus feugiat in ante metus. Tellus in metus vulputate eu scelerisque. Amet cursus sit amet dictum sit. Tortor posuere ac ut consequat semper viverra nam libero. Blandit turpis cursus in hac. Euismod in pellentesque massa placerat duis. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Tristique senectus et netus et. Scelerisque purus semper eget duis at tellus at. Ante in nibh mauris cursus mattis. Elementum integer enim neque volutpat ac. Sed sed risus pretium quam vulputate. Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Maecenas sed enim ut sem viverra aliquet eget sit. Elit pellentesque habitant morbi tristique senectus et netus.</p>
+      <p>Tincidunt id aliquet risus feugiat in ante metus dictum!</p>
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"></div>
+      <div class="iconMenu">
+         <a href="https://www.google.com" target="_blank"><i class="bi bi-house-fill"></i></a>
+         <a href="https://www.google.com" target="_blank"><i class="bi bi-shop"></i></a>
+         <a href="https://www.google.com" target="_blank"><i class="bi bi-ui-radios"></i></a>
+         <a href="https://www.google.com" target="_blank"><i class="bi bi-box-seam"></i></a>
+    </div> -->
