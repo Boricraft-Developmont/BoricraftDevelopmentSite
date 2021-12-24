@@ -1,5 +1,5 @@
 #particles-js {
-  background: #4fc2e8;
+  background: #262626;
   position: absolute;
   top: 0;
   right: 0;
@@ -67,11 +67,11 @@
     border-radius: 5px;
     border: 1px solid gray;
   }
-  .btn {
+  .signbtn {
     padding: 10px;
     font-size: 15px;
     color: white;
-    background: #5F9EA0;
+    background-color: #4fc2e8;
     border: none;
     border-radius: 5px;
   }

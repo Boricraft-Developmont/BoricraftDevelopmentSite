@@ -31,16 +31,16 @@
 	 
   <form id="regform" method="post" action="login.php">
   	<?php include('errors.php'); ?>
-  	<div class="input-group">
+  	<div class="form-input">
   		<label>Username</label>
   		<input type="text" name="username" >
   	</div>
-  	<div class="input-group">
+  	<div class="form-input">
   		<label>Password</label>
   		<input type="password" name="password">
   	</div>
-  	<div class="input-group">
-  		<button type="submit" class="btn" name="login_user">Login</button>
+  	<div class="form-input">
+  		<button type="submit" class="signbtn" name="login_user">Login</button>
   	</div>
   	<p>
   		Not yet a member? <a href="register.php">Sign up</a>
