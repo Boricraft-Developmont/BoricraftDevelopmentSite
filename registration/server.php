@@ -1,7 +1,5 @@
 <?php
 require('../../phpconfig/config.php');
-require('base58_encode.php');
-
 
 // initializing variables
 $username = "";
