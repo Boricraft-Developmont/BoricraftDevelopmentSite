@@ -1,5 +1,6 @@
 <?php
 require('../../phpconfig/config.php');
+require('base58_encode.php');
 
 
 // initializing variables
@@ -44,10 +45,12 @@ if (isset($_POST['reg_user'])) {
 
   // Finally, register user if there are no errors in the form
   if (count($errors) == 0) {
+    $apikey = implode('-', str_split(substr(strtolower(md5(microtime().rand(1000, 9999))), 0, 30), 6));
+
   	$password = password_hash($password_1, PASSWORD_BCRYPT);//encrypt the password before saving in the database
 
-  	$query = "INSERT INTO users (username, email, password) 
-  			  VALUES('$username', '$email', '$password')";
+  	$query = "INSERT INTO users (username, email, password, apikey) 
+  			  VALUES('$username', '$email', '$password', '$apikey')";
   	mysqli_query($db, $query);
     session_start();
   	$_SESSION['username'] = $username;
@@ -73,7 +76,7 @@ if (isset($_POST['login_user'])) {
         $row = mysqli_fetch_array($results);
         if (password_verify($password, $row["password"])) {
           session_start();
-          
+          $
           $_SESSION['username'] = $username;
           $_SESSION['success'] = "You are now logged in";
           header('location: ../subpages/dashboard.php');
