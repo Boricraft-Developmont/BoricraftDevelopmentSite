@@ -85,19 +85,65 @@ body {
     .navbar-brand {
         display: none;
     }
-  }
-
-  @media only screen and (max-width: 1232px) {
-      .landingpage button {
-          font-size: 0.9rem;
-      }
-      .landingpage #b80448b0-14d5-4ee1-8d6b-75eb9311be00 {
+    .landingpage #b80448b0-14d5-4ee1-8d6b-75eb9311be00 {
         display: none;
 
     }
   }
 
-  @media only screen and (max-width: 1650px) {
+  @media only screen and (max-width: 1100px) {
+    .landingpage #b80448b0-14d5-4ee1-8d6b-75eb9311be00 {
+      height: 20vh;
+      width: 10vw;
+  }
+
+  .landingpage .h1 {
+      margin-top: 20vh;
+      margin-left: 50%;
+      width: 40%;
+      font-size: 9rem;
+  }
+  .landingpage button {
+      margin-top: 30rem;
+      width: 20%;
+      font-size: 0.9rem;
+  }
+}
+
+  @media only screen and (max-width: 1250px) {
+      .landingpage button {
+          font-size: 0.9rem;
+      }
+      .landingpage #b80448b0-14d5-4ee1-8d6b-75eb9311be00 {
+        height: 30vh;
+        width: 20vw;
+
+    }
+
+    .landingpage .h1 {
+        margin-top: 20vh;
+        margin-left: 50%;
+        width: 30%;
+        font-size: 9rem;
+    }
+    .landingpage button {
+        margin-top: 27rem;
+    }
+  }
+
+  @media only screen and (max-width: 1655px) {
+    .landingpage .h1 {
+        margin-top: 20vh;
+        margin-left: 5vw;
+        width: 30%;
+        font-size: 4rem;
+    }
+    .landingpage button {
+        margin-top: 25rem;
+    }
+  }
+
+  @media only screen and (max-width: 1540px) {
     .landingpage .h1 {
         color: white;
         margin-top: 20vh;
@@ -106,24 +152,11 @@ body {
         font-size: 4rem;
     }
     .landingpage button {
-        margin-top: 22rem;
+        margin-top: 25rem;
     }
   }
 
-  @media only screen and (max-width: 1546px) {
-    .landingpage .h1 {
-        color: white;
-        margin-top: 20vh;
-        margin-left: 5vw;
-        width: 30%;
-        font-size: 4rem;
-    }
-    .landingpage button {
-        margin-top: 22rem;
-    }
-  }
-
-  @media only screen and (max-width: 1486px) {
+  @media only screen and (max-width: 1530px) {
     .landingpage .h1 {
         color: white;
         margin-top: 25vh;
@@ -132,6 +165,11 @@ body {
         font-size: 3.7rem;
     }
     .landingpage button {
-        margin-top: 24rem;
+        margin-top: 25rem;
+    }
+    .landingpage #b80448b0-14d5-4ee1-8d6b-75eb9311be00 {
+        height: 60vh;
+        width: 50vw;
+
     }
   }
