@@ -44,7 +44,7 @@ if (isset($_POST['reg_user'])) {
 
   // Finally, register user if there are no errors in the form
   if (count($errors) == 0) {
-  	$password = md5($password_1);//encrypt the password before saving in the database
+  	$password = password_hash($password_1, PASSWORD_BCRYPT);//encrypt the password before saving in the database
 
   	$query = "INSERT INTO users (username, email, password) 
   			  VALUES('$username', '$email', '$password')";
@@ -68,11 +68,12 @@ if (isset($_POST['login_user'])) {
     }
   
     if (count($errors) == 0) {
-        $password = md5($password);
-        $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+        $query = "SELECT * FROM users WHERE username='$username'";
         $results = mysqli_query($db, $query);
-        if (mysqli_num_rows($results) == 1) {
+        $row = mysqli_fetch_array($results);
+        if (password_verify($password, $row["password"])) {
           session_start();
+          
           $_SESSION['username'] = $username;
           $_SESSION['success'] = "You are now logged in";
           header('location: ../subpages/dashboard.php');
